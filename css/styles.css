@@ -194,6 +194,7 @@ img {
     url(../images/backgrounds/bg.jpg);
   background-color: #c4c4c4;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -387,13 +388,12 @@ img {
 
 /* =============== /TEAM SECTION =============== */
 
-/* =============== PARTNERS SECTION =============== */
+/* =============== CLIENTS SECTION =============== */
 
 .client-section-list {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 50px;
 }
 
 .client-link {
@@ -402,7 +402,7 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
-  border-radius: 1px;
+  border-radius: 4px;
   border: 1px solid rgba(175, 177, 184, 1);
   color: var(--icon-gray-color);
 }
@@ -417,7 +417,7 @@ img {
   fill: currentColor;
 }
 
-/* =============== /PARTNERS SECTION =============== */
+/* =============== /CLIENTS SECTION =============== */
 
 /* =============== PORTFOLIO SECTION =============== */
 
@@ -462,7 +462,12 @@ img {
   gap: 30px;
 }
 
-.portfolio-list-item:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -504,10 +509,8 @@ img {
 }
 
 .footer-container {
-  width: 1200px;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-logo-word {
